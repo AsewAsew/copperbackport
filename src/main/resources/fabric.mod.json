@@ -2,17 +2,17 @@
 	"schemaVersion": 1,
 	"id": "copperbackport",
 	"version": "${version}",
-	"name": "Copper Backport",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Copper Backport (Lite)",
+	"description": "A small backport from the Copper Update.",
 	"authors": [
-		"Me!"
+		"AsewAsew"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/AsewAsew/copperbackport"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/copperbackport/icon.png",
+	"icon": "assets/minecraft/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -22,12 +22,9 @@
 			"asewasew.copperbackport.CopperBackportDataGenerator"
 		]
 	},
-	"mixins": [
-		"copperbackport.mixins.json"
-	],
 	"depends": {
 		"fabricloader": ">=0.19.5",
-		"minecraft": "~1.21",
+		"minecraft": ">=1.21 <1.21.2",
 		"java": ">=21",
 		"fabric-api": "*"
 	}

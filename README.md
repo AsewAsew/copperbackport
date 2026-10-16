@@ -1,30 +1,9 @@
-# Copper Backport (Lite)
-Just as the summary says, backporting the copper armor, weapons, tools, and nuggets from the 1.21.9 Copper Update.
+# Copper Backport
 
-## Contents
-Standard crafting recipes have been added for all items.
+## Setup
 
-### Armor
-- Copper Helmet
-- Copper Chestplate
-- Copper Leggings
-- Copper Boots
-- Copper Horse Armor
+For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
 
-### Weapons
-- Copper Sword
+## License
 
-### Tools
-- Copper Axe
-- Copper Hoe
-- Copper Pickaxe
-- Copper Shovel
-
-### Misc
-- Copper Nugget
-
-## Why?
-I know there are other mods that do this (and probably better), but I'm new to this side of modding and wanted to see if I can. It also allows me to make some add-ons for other mods in planning on making/have made.
-
-## Will I include more later?
-Idk, maybe? I've only added what I was going to use at this time.
+This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
