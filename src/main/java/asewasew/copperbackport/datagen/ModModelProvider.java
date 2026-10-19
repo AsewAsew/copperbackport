@@ -1,14 +1,12 @@
 package asewasew.copperbackport.datagen;
 
+import asewasew.copperbackport.item.ModArmorMaterials;
 import asewasew.copperbackport.item.ModItems;
+import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
-import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.item.equipment.EquipmentModel;
-import net.minecraft.util.Identifier;
+import net.minecraft.client.data.BlockStateModelGenerator;
+import net.minecraft.client.data.ItemModelGenerator;
+import net.minecraft.client.data.Models;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -28,14 +26,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.COPPER_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.COPPER_HOE, Models.HANDHELD);
 
-        itemModelGenerator.registerArmor(ModItems.COPPER_HELMET, Identifier.ofVanilla("copper"),
-                EquipmentModel.builder().addHumanoidLayers(Identifier.ofVanilla("copper")).build(), EquipmentSlot.HEAD);
-        itemModelGenerator.registerArmor(ModItems.COPPER_CHESTPLATE, Identifier.ofVanilla("copper"),
-                EquipmentModel.builder().addHumanoidLayers(Identifier.ofVanilla("copper")).build(), EquipmentSlot.CHEST);
-        itemModelGenerator.registerArmor(ModItems.COPPER_LEGGINGS, Identifier.ofVanilla("copper"),
-                EquipmentModel.builder().addHumanoidLayers(Identifier.ofVanilla("copper")).build(), EquipmentSlot.LEGS);
-        itemModelGenerator.registerArmor(ModItems.COPPER_BOOTS, Identifier.ofVanilla("copper"),
-                EquipmentModel.builder().addHumanoidLayers(Identifier.ofVanilla("copper")).build(), EquipmentSlot.FEET);
+        itemModelGenerator.registerArmor(ModItems.COPPER_HELMET, ModArmorMaterials.COPPER_KEY, "helmet", false);
+        itemModelGenerator.registerArmor(ModItems.COPPER_CHESTPLATE, ModArmorMaterials.COPPER_KEY, "chestplate", false);
+        itemModelGenerator.registerArmor(ModItems.COPPER_LEGGINGS, ModArmorMaterials.COPPER_KEY, "leggings", false);
+        itemModelGenerator.registerArmor(ModItems.COPPER_BOOTS, ModArmorMaterials.COPPER_KEY, "boots", false);
 
         itemModelGenerator.register(ModItems.COPPER_HORSE_ARMOR, Models.GENERATED);
     }
