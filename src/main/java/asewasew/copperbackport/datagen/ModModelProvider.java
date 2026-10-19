@@ -26,10 +26,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.COPPER_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.COPPER_HOE, Models.HANDHELD);
 
-        itemModelGenerator.registerArmor(ModItems.COPPER_HELMET, ModArmorMaterials.COPPER_KEY, "helmet", false);
-        itemModelGenerator.registerArmor(ModItems.COPPER_CHESTPLATE, ModArmorMaterials.COPPER_KEY, "chestplate", false);
-        itemModelGenerator.registerArmor(ModItems.COPPER_LEGGINGS, ModArmorMaterials.COPPER_KEY, "leggings", false);
-        itemModelGenerator.registerArmor(ModItems.COPPER_BOOTS, ModArmorMaterials.COPPER_KEY, "boots", false);
+        itemModelGenerator.registerArmor(ModItems.COPPER_HELMET, ModArmorMaterials.COPPER_KEY, ItemModelGenerator.HELMET_TRIM_ID_PREFIX, false);
+        itemModelGenerator.registerArmor(ModItems.COPPER_CHESTPLATE, ModArmorMaterials.COPPER_KEY, ItemModelGenerator.CHESTPLATE_TRIM_ID_PREFIX, false);
+        itemModelGenerator.registerArmor(ModItems.COPPER_LEGGINGS, ModArmorMaterials.COPPER_KEY, ItemModelGenerator.LEGGINGS_TRIM_ID_PREFIX, false);
+        itemModelGenerator.registerArmor(ModItems.COPPER_BOOTS, ModArmorMaterials.COPPER_KEY, ItemModelGenerator.BOOTS_TRIM_ID_PREFIX, false);
 
         itemModelGenerator.register(ModItems.COPPER_HORSE_ARMOR, Models.GENERATED);
     }
