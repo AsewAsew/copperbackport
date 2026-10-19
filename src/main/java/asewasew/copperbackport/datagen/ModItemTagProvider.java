@@ -1,8 +1,10 @@
 package asewasew.copperbackport.datagen;
 
 import asewasew.copperbackport.item.ModItems;
+import asewasew.copperbackport.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 
@@ -15,6 +17,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup lookup) {
+        getOrCreateTagBuilder(ModTags.COPPER_REPAIR).add(Items.COPPER_INGOT);
+
         getOrCreateTagBuilder(ItemTags.SWORDS).add(ModItems.COPPER_SWORD);
 
         getOrCreateTagBuilder(ItemTags.SHOVELS).add(ModItems.COPPER_SHOVEL);

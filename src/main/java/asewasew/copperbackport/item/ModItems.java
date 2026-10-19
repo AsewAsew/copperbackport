@@ -3,44 +3,49 @@ package asewasew.copperbackport.item;
 import asewasew.copperbackport.CopperBackport;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
+import net.minecraft.item.equipment.EquipmentType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item COPPER_NUGGET = registerItem("copper_nugget", new Item(new Item.Settings()));
+    public static final Item COPPER_NUGGET = registerItem("copper_nugget", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.ofVanilla("copper_nugget")))));
 
     public static final Item COPPER_SWORD = registerItem("copper_sword",
-            new SwordItem(ModToolMaterials.COPPER, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.COPPER, 3, -2.4f))));
+            new SwordItem(ModToolMaterials.COPPER, 3, -2.4f, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.ofVanilla("copper_sword")))));
     public static final Item COPPER_SHOVEL = registerItem("copper_shovel",
-            new ShovelItem(ModToolMaterials.COPPER, new Item.Settings()
-                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.COPPER, 1.5f, -3.0f))));
+            new ShovelItem(ModToolMaterials.COPPER, 1.5f, -3.0f, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.ofVanilla("copper_shovel")))));
     public static final Item COPPER_PICKAXE = registerItem("copper_pickaxe",
-            new PickaxeItem(ModToolMaterials.COPPER, new Item.Settings()
-                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.COPPER, 1, -2.8f))));
+            new PickaxeItem(ModToolMaterials.COPPER, 1, -2.8f, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.ofVanilla("copper_pickaxe")))));
     public static final Item COPPER_AXE = registerItem("copper_axe",
-            new AxeItem(ModToolMaterials.COPPER, new Item.Settings()
-                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.COPPER, 7, -3.2f))));
+            new AxeItem(ModToolMaterials.COPPER, 7, -3.2f, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.ofVanilla("copper_axe")))));
     public static final Item COPPER_HOE = registerItem("copper_hoe",
-            new HoeItem(ModToolMaterials.COPPER, new Item.Settings()
-                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.COPPER, -1, -2.0f))));
+            new HoeItem(ModToolMaterials.COPPER, -1, -2.0f, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.ofVanilla("copper_hoe")))));
 
     public static final Item COPPER_HELMET = registerItem("copper_helmet",
-            new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
-                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(10))));
+            new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, EquipmentType.HELMET, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.ofVanilla("copper_helmet")))));
     public static final Item COPPER_CHESTPLATE = registerItem("copper_chestplate",
-            new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
-                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(10))));
+            new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, EquipmentType.CHESTPLATE, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.ofVanilla("copper_chestplate")))));
     public static final Item COPPER_LEGGINGS = registerItem("copper_leggings",
-            new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
-                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(10))));
+            new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, EquipmentType.LEGGINGS, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.ofVanilla("copper_leggings")))));
     public static final Item COPPER_BOOTS = registerItem("copper_boots",
-            new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
-                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(10))));
+            new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, EquipmentType.BOOTS, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.ofVanilla("copper_boots")))));
 
     public static final Item COPPER_HORSE_ARMOR = registerItem("copper_horse_armor",
-            new AnimalArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().maxCount(1)));
+            new AnimalArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.ofVanilla("copper_horse_armor"))).maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.ofVanilla(name), item);

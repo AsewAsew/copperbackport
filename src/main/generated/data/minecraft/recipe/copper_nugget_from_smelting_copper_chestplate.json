@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.1,
   "group": "copper",
-  "ingredient": {
-    "item": "minecraft:copper_chestplate"
-  },
+  "ingredient": "minecraft:copper_chestplate",
   "result": {
     "id": "minecraft:copper_nugget"
   }
