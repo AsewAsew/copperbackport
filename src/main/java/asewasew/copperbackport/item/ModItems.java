@@ -28,16 +28,16 @@ public class ModItems {
 
     public static final Item COPPER_HELMET = registerItem("copper_helmet",
             new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
-                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(10))));
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(11))));
     public static final Item COPPER_CHESTPLATE = registerItem("copper_chestplate",
             new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
-                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(10))));
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(11))));
     public static final Item COPPER_LEGGINGS = registerItem("copper_leggings",
             new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
-                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(10))));
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(11))));
     public static final Item COPPER_BOOTS = registerItem("copper_boots",
             new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
-                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(10))));
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(11))));
 
     public static final Item COPPER_HORSE_ARMOR = registerItem("copper_horse_armor",
             new AnimalArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().maxCount(1)));
