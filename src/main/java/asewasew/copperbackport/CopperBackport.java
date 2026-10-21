@@ -1,6 +1,7 @@
 package asewasew.copperbackport;
 
 import asewasew.copperbackport.item.ModItems;
+import asewasew.copperbackport.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -14,5 +15,6 @@ public class CopperBackport implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModLootTableModifiers.modifyLootTables();
 	}
 }
