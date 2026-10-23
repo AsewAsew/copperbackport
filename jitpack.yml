@@ -1,7 +1,7 @@
 jdk:
-  - openjdk25
+  - openjdk26
 
 before_install:
   - sdk update
-  - sdk install java 25-open
-  - sdk use java 25-open
+  - sdk install java 6-open
+  - sdk use java 26-open
