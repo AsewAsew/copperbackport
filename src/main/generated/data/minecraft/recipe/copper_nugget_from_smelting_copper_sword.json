@@ -4,7 +4,9 @@
   "cookingtime": 200,
   "experience": 0.1,
   "group": "copper",
-  "ingredient": "minecraft:copper_sword",
+  "ingredient": {
+    "item": "minecraft:copper_sword"
+  },
   "result": {
     "id": "minecraft:copper_nugget"
   }

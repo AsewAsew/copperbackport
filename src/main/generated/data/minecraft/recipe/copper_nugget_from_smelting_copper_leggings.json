@@ -4,7 +4,9 @@
   "cookingtime": 200,
   "experience": 0.1,
   "group": "copper",
-  "ingredient": "minecraft:copper_leggings",
+  "ingredient": {
+    "item": "minecraft:copper_leggings"
+  },
   "result": {
     "id": "minecraft:copper_nugget"
   }
